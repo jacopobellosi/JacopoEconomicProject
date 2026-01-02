@@ -76,7 +76,7 @@ namespace Prova_1_econmics
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://github.com/jacopobellosi/JacopoEconomicsProject/");
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://github.com/jacopobellosi/JacopoEconomicProject/");
             Process.Start(sInfo);
         }
     }

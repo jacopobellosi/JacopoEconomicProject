@@ -76,8 +76,7 @@ namespace Prova_1_econmics
             f1.Show();
             this.Close(); // closes the Form2 instance.
         }
-        int i = 0;
-        string[] nomi = new string[10];
+        
         private void Salva_progetto_Click(object sender, EventArgs e)
         {
 
