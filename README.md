@@ -1,54 +1,50 @@
-# JacopoEconomicProject - Break-even Analysis Tool
+# Break-Even Analysis Tool
 
-Un'applicazione Windows Forms per l'analisi del punto di pareggio (Break-even Point) in economia e organizzazione aziendale.
+## Abstract
+This project presents a Windows Forms application designed for the economic analysis of business organizations, specifically focusing on Break-Even Analysis. The tool facilitates the computation of the break-even point by allowing users to input and manage fixed and variable costs. It provides a graphical representation of cost-volume-profit relationships, aiding in decision-making processes regarding production and pricing strategies.
 
-##  Descrizione
+## Key Features
+*   **Cost Management System**: A structured interface for the detailed entry and categorization of fixed and variable costs.
+*   **Automated Break-Even Computation**: Algorithms to calculate the precise break-even point based on user-defined parameters.
+*   **Graphical Visualization**: Interactive charting capabilities to visualize the intersection of total cost and total revenue curves.
+*   **Data Persistence**: Functionality to serialize project data into a proprietary format (\.JEP\) for storage and retrieval.
 
-Questo progetto permette agli utenti di inserire e gestire costi fissi e variabili per calcolare il punto di Break-even. L'applicazione offre funzionalità per salvare e caricare progetti e visualizzare graficamente i risultati dell'analisi.
+## System Requirements
+*   **Operating System**: Microsoft Windows
+*   **Runtime Environment**: .NET Framework 4.7.2
 
-### Funzionalità Principali
-- **Gestione Costi**: Inserimento dettagliato di costi fissi e variabili.
-- **Analisi Break-even**: Calcolo automatico del punto di pareggio.
-- **Visualizzazione Grafica**: Grafico interattivo per visualizzare l'andamento dei costi e dei ricavi.
-- **Salvataggio/Caricamento**: Possibilità di salvare i progetti in formato .JEP e ricaricarli successivamente.
+## Installation and Execution
 
-##  Requisiti di Sistema
-
-- **Sistema Operativo**: Windows
-- **Framework**: .NET Framework 4.7.2
-
-##  Installazione e Esecuzione
-
-### Metodo 1: Eseguibile Precompilato
-Se hai scaricato la release, puoi avviare direttamente il file eseguibile:
-`ash
+### Method 1: Pre-compiled Binary
+To execute the application using the pre-compiled binary, run the following command in the terminal:
+\\\ash
 .\BreakEvenAnalysis\bin\Debug\BreakEvenAnalysis.exe
-``r
+\\\`r
 
-### Metodo 2: Compilazione da Sorgente
+### Method 2: Source Compilation
 
-#### Prerequisiti
-- Visual Studio 2019/2022 con il carico di lavoro ".NET desktop development" installato.
-- Oppure MSBuild installato nel sistema.
+#### Prerequisites
+*   Visual Studio 2019/2022 with the ".NET desktop development" workload installed.
+*   Alternatively, the MSBuild toolchain.
 
-#### Compilazione con Visual Studio
-1. Apri il file BreakEvenAnalysis.sln con Visual Studio.
-2. Premi F5 o clicca su "Avvia" per compilare ed eseguire il progetto.
+#### Compilation via Visual Studio
+1.  Open the solution file \BreakEvenAnalysis.sln\ in Visual Studio.
+2.  Build and execute the project by pressing \F5\ or selecting "Start Debugging".
 
-#### Compilazione da Riga di Comando (MSBuild)
-Se non hai Visual Studio completo ma hai il framework .NET installato, puoi usare MSBuild:
+#### Compilation via Command Line (MSBuild)
+For environments lacking the full Visual Studio IDE, the project can be built using the .NET Framework MSBuild:
 
-`powershell
+\\\powershell
 & "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe" BreakEvenAnalysis.sln
-``r
+\\\`r
 
-##  Struttura del Progetto
+## Project Architecture
+The application is structured into several distinct modules, each responsible for specific functionalities:
 
-- **MainForm.cs**: Menu principale dell'applicazione.
-- **NewProjectForm.cs (Nuovo_progetto)**: Interfaccia per l'inserimento dei dati e la gestione del nuovo progetto.
-- **ImportProjectForm.cs (Progetto_importato)**: Gestione dei progetti importati.
-- **ChartForm.cs**: Logica per la visualizzazione del grafico di Break-even.
+*   **MainForm.cs**: Serves as the primary entry point and main menu of the application.
+*   **NewProjectForm.cs**: Provides the interface for initializing new analysis projects and data entry.
+*   **ImportProjectForm.cs**: Handles the logic for importing and parsing existing project files.
+*   **ChartForm.cs**: Implements the visualization logic for generating break-even charts.
 
-##  Autore
-
-Jacopo Bellosi
+## Author
+**Jacopo Bellosi**
